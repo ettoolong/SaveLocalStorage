@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="importTitle"></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 data-i18n="importTitle"></h1>
+
+  <div class="muted" data-i18n="importTarget"></div>
+  <div class="origin" id="target" data-i18n="loading"></div>
+
+  <label>
+    <span data-i18n="chooseFile"></span>
+    <input type="file" id="file" accept=".json,application/json" disabled>
+  </label>
+
+  <section id="file-info" hidden>
+    <dl>
+      <dt data-i18n="sourceOrigin"></dt><dd id="file-origin"></dd>
+      <dt data-i18n="exportedAt"></dt><dd id="file-time"></dd>
+      <dt data-i18n="itemCountLabel"></dt><dd id="file-count"></dd>
+    </dl>
+
+    <div class="warning" id="mismatch" hidden>
+      <span data-i18n="originMismatch"></span>
+      <label><input type="checkbox" id="force"> <span data-i18n="forceImport"></span></label>
+    </div>
+
+    <label><input type="checkbox" id="clear"> <span data-i18n="clearBeforeImport"></span></label>
+  </section>
+
+  <div class="buttons">
+    <button id="do-import" data-i18n="import" disabled></button>
+    <button id="reload" class="secondary" data-i18n="reloadPage" hidden></button>
+    <button id="close" class="secondary" data-i18n="close"></button>
+  </div>
+  <div class="status" id="status"></div>
+
+  <script src="common.js"></script>
+  <script src="import.js"></script>
+</body>
+</html>

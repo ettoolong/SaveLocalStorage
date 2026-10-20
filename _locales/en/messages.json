@@ -1,0 +1,75 @@
+{
+  "extName": { "message": "Save LocalStorage" },
+  "extDescription": { "message": "Export / import the localStorage of the current website as JSON." },
+  "actionTitle": { "message": "Save LocalStorage" },
+
+  "loading": { "message": "Loading…" },
+  "export": { "message": "Export" },
+  "import": { "message": "Import" },
+  "close": { "message": "Close" },
+  "unknown": { "message": "(unknown)" },
+
+  "itemCount": {
+    "message": "$COUNT$ item(s) stored",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "unknownPage": { "message": "(unknown page)" },
+  "errNoStorageAccess": {
+    "message": "Cannot access localStorage: $ERROR$",
+    "placeholders": { "error": { "content": "$1" } }
+  },
+  "errRestrictedPage": { "message": "This page is not supported (e.g. about: pages or the add-ons store)." },
+  "errDownloadFailed": { "message": "Download failed" },
+  "exportDone": {
+    "message": "Exported $COUNT$ item(s).",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "exportFailed": {
+    "message": "Export failed: $ERROR$",
+    "placeholders": { "error": { "content": "$1" } }
+  },
+
+  "importTitle": { "message": "Import localStorage" },
+  "importTarget": { "message": "Import into" },
+  "chooseFile": { "message": "Choose a previously exported JSON file:" },
+  "sourceOrigin": { "message": "Source origin" },
+  "exportedAt": { "message": "Exported at" },
+  "itemCountLabel": { "message": "Items" },
+  "originMismatch": { "message": "⚠ The file's origin differs from the current website!" },
+  "forceImport": { "message": "I understand the risk, import into the current website anyway" },
+  "clearBeforeImport": { "message": "Clear the current website's localStorage before importing" },
+  "reloadPage": { "message": "Reload page" },
+  "inaccessible": { "message": "(inaccessible)" },
+  "errTargetTab": { "message": "Cannot access the target tab. It may have been closed or navigated away. Go back to the page and click the add-on button again." },
+  "errReadFile": {
+    "message": "Cannot read file: $ERROR$",
+    "placeholders": { "error": { "content": "$1" } }
+  },
+  "errNotObject": { "message": "The file content is not a JSON object." },
+  "errWrongFormat": { "message": "This file was not exported by this add-on." },
+  "errUnsupportedVersion": {
+    "message": "Unsupported file version: $VERSION$",
+    "placeholders": { "version": { "content": "$1" } }
+  },
+  "errMissingOrigin": { "message": "The file is missing origin information." },
+  "errMissingData": { "message": "The file is missing the data field." },
+  "errValueNotString": {
+    "message": "The value of key \"$KEY$\" is not a string.",
+    "placeholders": { "key": { "content": "$1" } }
+  },
+  "errPageOriginChanged": {
+    "message": "The page origin ($ACTUAL$) does not match the expected one ($EXPECTED$). Import cancelled.",
+    "placeholders": {
+      "actual": { "content": "$1" },
+      "expected": { "content": "$2" }
+    }
+  },
+  "importDone": {
+    "message": "Imported $COUNT$ item(s). Reload the page for the changes to take effect.",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "importFailed": {
+    "message": "Import failed: $ERROR$",
+    "placeholders": { "error": { "content": "$1" } }
+  }
+}

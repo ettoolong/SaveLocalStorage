@@ -1,0 +1,75 @@
+{
+  "extName": { "message": "Save LocalStorage" },
+  "extDescription": { "message": "匯出 / 匯入目前網站的 localStorage 內容 (JSON)。" },
+  "actionTitle": { "message": "Save LocalStorage" },
+
+  "loading": { "message": "讀取中…" },
+  "export": { "message": "匯出" },
+  "import": { "message": "匯入" },
+  "close": { "message": "關閉" },
+  "unknown": { "message": "(未知)" },
+
+  "itemCount": {
+    "message": "目前共有 $COUNT$ 筆資料",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "unknownPage": { "message": "(未知頁面)" },
+  "errNoStorageAccess": {
+    "message": "無法存取 localStorage: $ERROR$",
+    "placeholders": { "error": { "content": "$1" } }
+  },
+  "errRestrictedPage": { "message": "此頁面無法使用 (例如 about: 頁面或附加元件商店)。" },
+  "errDownloadFailed": { "message": "下載失敗" },
+  "exportDone": {
+    "message": "已匯出 $COUNT$ 筆資料。",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "exportFailed": {
+    "message": "匯出失敗: $ERROR$",
+    "placeholders": { "error": { "content": "$1" } }
+  },
+
+  "importTitle": { "message": "匯入 localStorage" },
+  "importTarget": { "message": "匯入目標網站" },
+  "chooseFile": { "message": "選擇之前匯出的 JSON 檔:" },
+  "sourceOrigin": { "message": "來源網域" },
+  "exportedAt": { "message": "匯出時間" },
+  "itemCountLabel": { "message": "資料筆數" },
+  "originMismatch": { "message": "⚠ 檔案的網域與目前網站不同!" },
+  "forceImport": { "message": "我了解風險, 仍要匯入到目前網站" },
+  "clearBeforeImport": { "message": "匯入前先清空目前網站的 localStorage" },
+  "reloadPage": { "message": "重新整理該頁面" },
+  "inaccessible": { "message": "(無法存取)" },
+  "errTargetTab": { "message": "無法存取目標分頁, 可能已關閉或已跳轉到其他頁面。請回到該頁面重新點選附加元件按鈕。" },
+  "errReadFile": {
+    "message": "無法讀取檔案: $ERROR$",
+    "placeholders": { "error": { "content": "$1" } }
+  },
+  "errNotObject": { "message": "檔案內容不是 JSON 物件。" },
+  "errWrongFormat": { "message": "不是由本附加元件匯出的檔案。" },
+  "errUnsupportedVersion": {
+    "message": "不支援的檔案版本: $VERSION$",
+    "placeholders": { "version": { "content": "$1" } }
+  },
+  "errMissingOrigin": { "message": "檔案缺少網域資訊。" },
+  "errMissingData": { "message": "檔案缺少 data 欄位。" },
+  "errValueNotString": {
+    "message": "鍵「$KEY$」的值不是字串。",
+    "placeholders": { "key": { "content": "$1" } }
+  },
+  "errPageOriginChanged": {
+    "message": "目前頁面網域 ($ACTUAL$) 與預期 ($EXPECTED$) 不符, 已取消匯入。",
+    "placeholders": {
+      "actual": { "content": "$1" },
+      "expected": { "content": "$2" }
+    }
+  },
+  "importDone": {
+    "message": "已匯入 $COUNT$ 筆資料。重新整理頁面後生效。",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "importFailed": {
+    "message": "匯入失敗: $ERROR$",
+    "placeholders": { "error": { "content": "$1" } }
+  }
+}
